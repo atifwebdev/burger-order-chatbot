@@ -1,25 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger Order Chatbot</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/fav.svg">
+    <title>Burger Home – Fast Food & Restaurant</title>
+    <!-- styles css -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/e86936c2-5488-48b1-a9cd-0e014dfbfc0e">
-</iframe>
+<body class="home-four">
+    <!-- header area start -->
+    <header class="header-four header--sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-main-wrapper">
+                        <div class="logo-area">
+                            <a href="/" class="logo">
+                                <img src="./assets/images/01.svg" alt="image-logo">
+                            </a>
+                        </div>
+                        <div class="rts-header-mid">
+                            <!-- nav area start -->
+                            <div class="main-nav-desk nav-area">
+                                <nav>
+                                    <ul>
+                                        <li class="">
+                                            <a class="nav-link" href="#">Home</a>
+                                        </li>
+                                        <li class="">
+                                            <a class="nav-link" href="https://console.dialogflow.com/api-client/demo/embedded/e86936c2-5488-48b1-a9cd-0e014dfbfc0e" target="_blank">Chatbot</a>
+                                        </li>
+                                        <li class="has-droupdown pages">
+                                            <a class="nav-link" href="#">About</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Our Chef</a></li>
+                                                <li><a href="#">Meet The Chef</a></li>
+                                                <li><a href="#">Reservation</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-droupdown mega">
+                                            <a class="nav-link" href="#">Menus</a>
+                                            <div class="submenu menu-home">
+                                                <ul class="container flex-mega">
+                                                    <li><a href="#"><img src="./assets/images/menu-1.webp" alt="menu"> <br> MenuTab</a></li>
+                                                    <li><a href="#"><img src="./assets/images/menu-2.webp" alt="menu"><br>MenuList</a></li>
+                                                    <li><a href="#"><img src="./assets/images/menu-3.webp" alt="menu"><br>MenuList2</a></li>
+                                                    <li><a href="#"><img src="./assets/images/menu-4.webp" alt="menu"><br>MenuSection</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="pages">
+                                            <a class="nav-link" href="#">Blog</a>
+                                        </li>
+                                        <li class="has-droupdown pages">
+                                            <a class="nav-link" href="#">Shop</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Shop</a></li>
+                                                <li><a href="#">Shop Details</a></li>
+                                                <li><a href="#">Cart</a></li>
+                                                <li><a href="#">Checkout</a></li>
+                                                <li><a href="#">My Account</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- nav-area end -->
+                        </div>
+                        <!-- header right start -->
+                        <div class="rts-header-right">
+                            <div class="query-list">
+                                <div class="icon"><i class="fa-solid fa-phone-flip"></i></div>
+                                <a href="tel:2582121583"><span class="text-heading">+258 (21) 21583</span></a>
+                            </div>
+                            <div class="menu-area" id="menu-btn">
+                                <a href="#" class="nav-menu-link menu-button">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                    <span class="dot4"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- header right end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+    <!-- side bar for desktop -->
+    <div id="side-bar" class="side-bar header-one">
+        <div class="inner">
+            <button class="close-icon-menu"><i class="far fa-times"></i></button>
+            <!-- inner menu area desktop start -->
+            <div class="inner-main-wrapper-desk d-none d-lg-block">
+                <div class="thumbnail">
+                    <img src="./assets/images/01.svg" alt="dinenos">
+                </div>
+                <div class="banner-shape-area">
+                    <span class="shape"></span>
+                    <span class="shape"></span>
+                    <span class="shape"></span>
+                </div>
+                <div class="inner-content">
+                    <ul class="feature-list">
+                        <li class="query-list">
+                            <span class="sub-text">18/B, New Ave 1000 New York</span>
+                            <a class="phone" href="tel:99988899900">999 888 999 00</a>
+                            <a class="email" href="#">office@webmailfree.com</a>
+                        </li>
+                        <li class="query-list two">
+                            <p class="time">Mon - Thu: 10 AM - 02 AM</p>
+                            <p class="time">Fri - Sun: 10 AM - 02 AM</p>
+                        </li>
+                    </ul>
+                    <div class="footer">
+                        <ul class="social-area">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu area start -->
+            <div class="mobile-menu d-block d-lg-none">
+                <nav class="nav-main mainmenu-nav mt--30">
+                    <ul class="mainmenu" id="mobile-menu-active">
+                        <li class="">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="has-droupdown">
+                            <a href="#" class="main">About</a>
+                            <ul class="submenu">
+                                <li><a class="mobile-menu-link" href="#">Our Chef</a></li>
+                                <li><a class="mobile-menu-link" href="#">Meet The Chef</a></li>
+                                <li><a class="mobile-menu-link" href="#">Reservation</a></li>
+                                <li><a class="mobile-menu-link" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-droupdown">
+                            <a href="#" class="main">Menus</a>
+                            <ul class="submenu">
+                                <li><a class="mobile-menu-link" href="#">MenuTab</a></li>
+                                <li><a class="mobile-menu-link" href="#">MenuList</a></li>
+                                <li><a class="mobile-menu-link" href="#">MenuList2</a></li>
+                                <li><a class="mobile-menu-link" href="#">Menusection</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-droupdown">
+                            <a href="#" class="main">Shop</a>
+                            <ul class="submenu">
+                                <li><a class="mobile-menu-link" href="#">Shop Details</a></li>
+                                <li><a class="mobile-menu-link" href="#">Cart</a></li>
+                                <li><a class="mobile-menu-link" href="#">Checkout</a></li>
+                                <li><a class="mobile-menu-link" href="#">My Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-wrapper-one">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu area end -->
+    </div>
+    <!-- header style two End -->
+    <!-- banner start -->
+    <div class="rts-banner-main-area-swiper banner-four">
+        <div class="banner-img-1" data-sal="slide-down" data-sal-delay="800" data-sal-duration="800"><img src="./assets/images/01.webp" alt="image"></div>
+        <div class="banner-img-2" data-sal="slide-left" data-sal-delay="750" data-sal-duration="750"><img src="./assets/images/flame.webp" alt="image"></div>
+        <div class="banner-img-3" data-sal="slide-left" data-sal-delay="700" data-sal-duration="700"><img src="./assets/images/04.webp" alt="image"></div>
+        <div class="banner-img-4"><img data-sal="slide-up" data-sal-delay="850" data-sal-duration="850" src="./assets/images/05.webp" alt="image"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner-left-image">
+                        <img data-sal="zoom-out" data-sal-delay="350" data-sal-duration="350" src="./assets/images/02.webp" alt="banner-left-image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-right-image" data-sal="zoom-in" data-sal-delay="600" data-sal-duration="600">
+                        <img src="./assets/images/03.webp" alt="banner-right-image">
+                        <div class="discount-tag"><img data-sal="slide-up" data-sal-delay="700" data-sal-duration="700" src="./assets/images/tag-1.webp" alt="discount-tag"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+    <!-- menu start -->
+    <div class="discount-menu-area rts-section-gap">
+        <div class="container">
+            <div class="discount-inner">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="menu-wrapper first">
+                            <div class="content">
+                                <div class="heading-title">SPECIAL ZAMBO BURGER</div>
+                                <p class="desc">Get 20% Flat Discount On This Week</p>
+                                <a href="#" class="order-btn">Make An Order</a>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/burger-1.webp" alt="burger-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="menu-wrapper middle">
+                            <div class="content">
+                                <div class="heading-title">SUMMER BURGER FESTIVAL 2023</div>
+                                <p class="desc">Get 20% Flat Discount On This Week</p>
+                                <a href="#" class="order-btn">Make An Order</a>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/burger-2.webp" alt="burger-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="menu-wrapper">
+                            <div class="content">
+                                <div class="heading-title">SPECIAL CHESSE BURGER
+                                </div>
+                                <p class="desc">Get 20% Flat Discount On This Week</p>
+                                <a href="#" class="order-btn">Make An Order</a>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/burger-3.webp" alt="burger-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu end -->
+    <!-- menu area start -->
+    <div class="rts-menu-area4" data-sal="slide-up" data-sal-delay="120" data-sal-duration="800">
+        <div class="menu-area-inner">
+            <div class="top">
+                <div class="row">
+                    <div class="col-lg-6 p--0">
+                        <div class="image">
+                            <img src="./assets/images/07.webp" alt="menu-image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p--0">
+                        <div class="content-top">
+                            <div class="inner">
+                                <div class="banner-one-wrapper">
+                                    <h2 class="title">ENJOY AUTHENTIC</h2>
+                                    <p class="desc">Delicious Burger</p>
+                                </div>
+                                <div class="content-inner">
+                                    <div class="menu-wrapper" data-sal="zoom-in" data-sal-delay="150" data-sal-duration="800">
+                                        <div class="menu-image"><a href="#"><img src="./assets/images/sm-09.webp" alt="item"></a></div>
+                                        <div class="content">
+                                            <h4 class="p-title"><a href="#">Fresh Oysters Dozen</a></h4>
+                                            <p class="desc">beetroot and datterini, goat cheese, Ricotta</p>
+                                        </div>
+                                        <div class="price-tag"><a href="#">$10.00</a></div>
+                                    </div>
+                                    <div class="menu-wrapper" data-sal="zoom-in" data-sal-delay="150" data-sal-duration="800">
+                                        <div class="menu-image"><a href="#"><img src="./assets/images/sm-10.webp" alt="item"></a></div>
+                                        <div class="content">
+                                            <h4 class="p-title"><a href="#">Fresh Oysters Dozen</a></h4>
+                                            <p class="desc">beetroot and datterini, goat cheese, Ricotta</p>
+                                        </div>
+                                        <div class="price-tag"><a href="#">$10.00</a></div>
+                                    </div>
+                                    <div class="menu-wrapper" data-sal="zoom-in" data-sal-delay="150" data-sal-duration="800">
+                                        <div class="menu-image"><a href="#"><img src="./assets/images/sm-11.webp" alt="item"></a></div>
+                                        <div class="content">
+                                            <h4 class="p-title"><a href="#">Fresh Oysters Dozen</a></h4>
+                                            <p class="desc">beetroot and datterini, goat cheese, Ricotta</p>
+                                        </div>
+                                        <div class="price-tag"><a href="#">$10.00</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="row">
+                    <div class="col-lg-6 p--0">
+                        <div class="content-bottom">
+                            <div class="inner">
+                                <div class="banner-one-wrapper">
+                                    <h2 class="title">The Best Burger Place <br> <span>In Marlin City.</span></h2>
+                                    <p>Sed metus a neque sociosqu odio dapibus portass ultricies bindum dictum semper dui. Diam habitasse justo neque purus curabitur iaculis vivamus sed, pulvinar donec tincidunt tellus nulla feugiat gravida tempor.</p>
+                                    <a href="#" class="order-btn">Make An Order Now</a>
+                                </div>
+                            </div>
+                            <div class="shape-image">
+                                <img src="./assets/images/vector3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p--0">
+                        <div class="image">
+                            <img src="./assets/images/08.webp" alt="menu-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu area end -->
+    <!-- testimonial area start -->
+    <div class="rts-testimonial-area rts-section-gap">
+        <div class="container">
+            <div class="testimonial-area-inner">
+                <div class="banner-one-wrapper">
+                    <h1 class="title-banner" data-sal="slide-up" data-sal-delay="170" data-sal-duration="800">
+                        Customers Feedback
+                    </h1>
+                    <p class="desc" data-sal="slide-up" data-sal-duration="800">It’s the story of an everlasting love affair, Dieter Delicioz and the <br> Atlantic Ocean in the big air.</p>
+                </div>
+                <div class="swiper-testimonial-main-wrapper" data-sal="slide-up" data-sal-delay="1500" data-sal-duration="800">
+                    <div class="swiper swiper-testimonials-1">
+                        <div class="left-quote">
+                            <img src="./assets/images/quote-1.webp" alt="testimonial">
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-wrapper">
+                                    <div class="content">
+                                        <h3>
+                                            <em>“ Customer feedback is the information, insights, issues, & input shared by your community about their experiences with your company, product, or services. ”</em>
+                                        </h3>
+                                    </div>
+                                    <div class="author">
+                                        <h5 class="title">Alonso D. Dowson</h5>
+                                        <p class="sub-title">ceo of Alonso co.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-wrapper">
+                                    <div class="content">
+                                        <h3>
+                                            <em>“ Customer feedback is the information, insights, issues, & input shared by your community about their experiences with your company, product, or services. ”</em>
+                                        </h3>
+                                    </div>
+                                    <div class="author">
+                                        <h5 class="title">Alonso D. Dowson</h5>
+                                        <p class="sub-title">ceo of Alonso co.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-wrapper">
+                                    <div class="content">
+                                        <h3>
+                                            <em>“ Customer feedback is the information, insights, issues, & input shared by your community about their experiences with your company, product, or services. ”</em>
+                                        </h3>
+                                    </div>
+                                    <div class="author">
+                                        <h5 class="title">Alonso D. Dowson</h5>
+                                        <p class="sub-title">ceo of Alonso co.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-quote">
+                            <img src="./assets/images/quote-2.webp" alt="testimonial">
+                        </div>
+                    </div>
+                    <div class="next-prev-btn">
+                        <div class="swiper-button-prevs"><i class="fa-solid fa-arrow-left-long"></i></div>
+                        <div class="swiper-button-nexts"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial area end -->
+    <!-- counter area start -->
+    <div class="rts-counter-up-area home-four">
+        <div class="container">
+            <div class="counter-up-area-inner">
+                <!-- single fun facts -->
+                <div class="rts-single-service-two" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
+                    <h2 class="title-main"><span class="counter">10</span></h2>
+                    <p class="disc">
+                        Awards Won
+                    </p>
+                </div>
+                <!-- single fun facts end -->
+                <!-- single fun facts -->
+                <div class="rts-single-service-two" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800">
+                    <h2 class="title-main"><span class="counter">5</span> <span class="prefix">K</span></h2>
+                    <p class="disc">
+                        Daily Orders
+                    </p>
+                </div>
+                <!-- single fun facts end -->
+                <!-- single fun facts -->
+                <div class="rts-single-service-two" data-sal="slide-up" data-sal-delay="550" data-sal-duration="800">
+                    <h2 class="title-main"><span class="counter">99</span></h2>
+                    <p class="disc">
+                        Members
+                    </p>
+                </div>
+                <!-- single fun facts end -->
+                <!-- single fun facts -->
+                <div class="rts-single-service-two" data-sal="slide-up" data-sal-delay="550" data-sal-duration="800">
+                    <h2 class="title-main"><span class="counter">100</span></h2>
+                    <p class="disc">
+                        Menu & Dish
+                    </p>
+                </div>
+                <!-- single fun facts end -->
+                <!-- single fun facts -->
+                <div class="rts-single-service-two" data-sal="slide-up" data-sal-delay="550" data-sal-duration="800">
+                    <h2 class="title-main"><span class="counter">25</span></h2>
+                    <p class="disc">
+                        Specialities
+                    </p>
+                </div>
+                <!-- single fun facts end -->
+            </div>
+        </div>
+    </div>
+    <!-- counter area end -->
+    <!-- blog area start -->
+    <div class="rts-blog-area rts-blog-area-2 rts-section-gap">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <div class="banner-one-wrapper">
+                        <h1 class="title-banner" data-sal="slide-up" data-sal-delay="120" data-sal-duration="800">
+                            Blog & Insights
+                        </h1>
+                        <p class="desc" data-sal="slide-up" data-sal-delay="200" data-sal-duration="800">It’s the story of an everlasting love affair, Dieter Delicioz and the <br> Atlantic Ocean in the big air.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-technical-main-wrapper" data-sal="slide-up" data-sal-delay="1200" data-sal-duration="800">
+                <div class="swiper mySwiper-blog">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-wrapper">
+                                <div class="image-part">
+                                    <img src="./assets/images/blog-01.jpg" alt="blog">
+                                </div>
+                                <div class="blog-badge">
+                                    <span class="date">12</span>
+                                    <span class="month">APR</span>
+                                </div>
+                                <div class="content">
+                                    <p class="tag"><a href="#">Fast Food</a></p>
+                                    <h3 class="title"><a href="#">Love and food: It is all about dinenos restaurant</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-wrapper">
+                                <div class="image-part">
+                                    <img src="./assets/images/blog-03.jpg" alt="blog">
+                                </div>
+                                <div class="blog-badge">
+                                    <span class="date">12</span>
+                                    <span class="month">APR</span>
+                                </div>
+                                <div class="content">
+                                    <p class="tag"><a href="#">Dinner</a></p>
+                                    <h3 class="title"><a href="#">Enjoy an exceptional journey of taste of joy.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-wrapper">
+                                <div class="image-part">
+                                    <img src="./assets/images/blog-04.jpg" alt="blog">
+                                </div>
+                                <div class="blog-badge">
+                                    <span class="date">12</span>
+                                    <span class="month">APR</span>
+                                </div>
+                                <div class="content">
+                                    <p class="tag"><a href="#">Restaurant</a></p>
+                                    <h3 class="title"><a href="#">The opportunity to work abroad is a prospect, one</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-wrapper">
+                                <div class="image-part">
+                                    <img src="./assets/images/blog-02.jpg" alt="blog">
+                                </div>
+                                <div class="blog-badge">
+                                    <span class="date">12</span>
+                                    <span class="month">APR</span>
+                                </div>
+                                <div class="content">
+                                    <p class="tag"><a href="#">Rice curry</a></p>
+                                    <h3 class="title"><a href="#">Food is the foundation of true happiness</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area end -->
+    <!-- blog area start -->
+    <div class="rts-brand-area rts-section-gapBottom bg-white" data-sal="slide-up" data-sal-delay="120" data-sal-duration="800">
+        <div class="container">
+            <div class="swiper-brand-main-wrapper">
+                <div class="swiper mySwiper-brand">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-wrapper">
+                                <div class="image">
+                                    <a href="#"><img src="./assets/images/01.png" alt="brand"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-wrapper">
+                                <div class="image">
+                                    <a href="#"><img src="./assets/images/02.png" alt="brand"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-wrapper">
+                                <div class="image">
+                                    <a href="#"><img src="./assets/images/03.png" alt="brand"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-wrapper">
+                                <div class="image">
+                                    <a href="#"><img src="./assets/images/04.png" alt="brand"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-wrapper">
+                                <div class="image">
+                                    <a href="#"><img src="./assets/images/05.png" alt="brand"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="divider">
+                <div class="rt-line-draw" data-sal="slide-up" data-sal-delay="120" data-sal-duration="800">
+                    <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="200px" xml:space="preserve">
+                        <path class="line-path wow path-vert" fill="#01a09e" stroke-width="1" stroke="#dd5903" d="M30 0 v600 400"></path>
+                    </svg>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- blog area end -->
+    <!-- gallery area start -->
+    <div class="rts-gallery-area bg-white">
+        <div class="gallery-area-inner">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="gallery-image" data-sal="slide-up" data-sal-delay="50" data-sal-duration="800">
+                        <a id="open-popupd" href="#"><img src="./assets/images/gallery-img-05.webp" alt="gallery"></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="gallery-image" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800">
+                        <a id="open-popupe" href="#"><img src="./assets/images/gallery-img-06.webp" alt="gallery"></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="gallery-image" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
+                        <a id="open-popupf" href="#"><img src="./assets/images/gallery-img-07.webp" alt="gallery"></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="gallery-image" data-sal="slide-up" data-sal-delay="200" data-sal-duration="800">
+                        <a id="open-popupg" href="#"><img src="./assets/images/gallery-img-08.webp" alt="gallery"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery area end -->
+    <!-- rts footer area start -->
+    <!-- rts footer area start -->
+    <div class="rts-footer-one rts-section-gap2Top">
+        <div class="shape-1"><img src="./assets/images/vector5.webp" alt="shape"></div>
+        <div class="shape-2"><img src="./assets/images/vector6.webp" alt="shape"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- main footer area start -->
+                    <div class="main-footer-wrapper-one">
+                        <div class="single-footer-wized-one logo-area" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
+                            <a href="#" class="logo">
+                                <img src="./assets/images/01.svg" alt="logo">
+                            </a>
+                            <p class="disc-f">
+                                Be the first to know about new collections, special events, and what’s going on at Our Place. We are creative
+                            </p>
+                            <div class="query-list">
+                                <span class="sub-text">Book a table</span>
+                                <a href="tel:88899900011">
+                                    <span class="text-heading">888 999 000 11</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-footer-wized-one get-in-touch" data-sal="slide-up" data-sal-delay="350" data-sal-duration="800">
+                            <div class="footer-header-two get-touch">
+                                <h6 class="title">Get In Touch</h6>
+                                <div class="get-touch">
+                                    <ul>
+                                        <li><i class="fa-solid fa-location-dot"></i>Silk St, Barbican, London E2Y, UK</li>
+                                        <li><a href="tel:39055123456"><i class="fa-solid fa-phone-flip"></i>+39-055-123456</a></li>
+                                        <li><a href="mailto:booking@example.com"><i class="fa-solid fa-envelope-open"></i>booking@example.com</a></li>
+                                    </ul>
+                                    <div class="rts-social-wrapper">
+                                        <ul>
+                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-footer-wized-one pages" data-sal="slide-up" data-sal-delay="250" data-sal-duration="800">
+                            <div class="footer-header-two pages">
+                                <h6 class="title">Pages</h6>
+                                <div class="pages">
+                                    <ul>
+                                        <li><a href="#"> About Us</a></li>
+                                        <li><a href="#"> Our Menu</a></li>
+                                        <li><a href="#">Our Chef</a></li>
+                                        <li><a href="#"> Reservation</a></li>
+                                        <li><a href="#"> Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-footer-wized-one gallery" data-sal="slide-up" data-sal-delay="550" data-sal-duration="800">
+                            <div class="gallery-item"><img src="./assets/images/sm-01.jpg" alt=""></div>
+                            <div class="gallery-item"><img src="./assets/images/sm-02.jpg" alt=""></div>
+                            <div class="gallery-item"><img src="./assets/images/sm-03.jpg" alt=""></div>
+                            <div class="gallery-item"><img src="./assets/images/sm-04.jpg" alt=""></div>
+                            <div class="gallery-item"><img src="./assets/images/sm-05.jpg" alt=""></div>
+                            <div class="gallery-item"><img src="./assets/images/sm-06.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- ,main footer area end -->
+                </div>
+            </div>
+        </div>
+        <!-- copy right area start -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-footer-one">
+                            <p class="disc">
+                                Copyright @2023 Dinenos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright area end -->
+    </div>
+    <!-- rts footer area end -->
+    <!-- rts footer area end -->
+    <!-- header style two -->
+    <!-- progress area start -->
+    <!-- <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </div> -->
+    <!-- progress area end -->
+    <div class="search-input-area">
+        <div class="container">
+            <div class="search-input-inner">
+                <div class="input-div">
+                    <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #">
+                    <button><i class="far fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+    </div>
+    <div id="anywhere-home" class="">
+    </div>
+    <!-- pre loader start -->
+    <div id="dinenos-load">
+        <div class="loader-wrapper">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- pre loader end -->
 
+    <!-- Chatbot -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="Burger Order Chatbot"
+    agent-id="e86936c2-5488-48b1-a9cd-0e014dfbfc0e"
+    language-code="en"
+    ></df-messenger>
 
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Burger-Order-Bot"
-  agent-id="e86936c2-5488-48b1-a9cd-0e014dfbfc0e"
-  language-code="en"
-></df-messenger>
+    <!-- JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/counter-up.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/waypoint.js"></script>
+    <script src="./assets/js/metisMenu.min.js"></script>
+    <script src="./assets/js/wow.js"></script>
+    <script src="./assets/js/magnific-popup.js"></script>
+    <script src="./assets/js/sal.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-slideNav.js"></script>
+    <script src="./assets/js/swip-img.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
